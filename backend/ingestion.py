@@ -16,8 +16,8 @@ supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 # -- API Configuration --
 TRANSIT_URL = os.getenv("TRANSIT_REALTIME_URL")
 WEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
-# Example for Albany, NY
-WEATHER_URL = f"https://api.openweathermap.org/data/2.5/weather?lat=42.6621&lon=-73.7932&appid={WEATHER_API_KEY}&units=metric"
+# Example for Grand Rapids, MI
+WEATHER_URL = f"https://api.openweathermap.org/data/2.5/weather?lat=42.9715&lon=-85.6698&appid={WEATHER_API_KEY}&units=metric"
 
 def get_transit_data(access_token):
     """Fetches and parses GTFS-Realtime data."""
